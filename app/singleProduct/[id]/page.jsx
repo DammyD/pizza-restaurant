@@ -5,7 +5,7 @@ import Size from "../../../public/assets/size.png"
 import { useState } from "react";
 import { CiHeart } from "react-icons/ci";
 
-const singleProduct = () => {
+const SingleProduct = () => {
 
   const [size, setSize] = useState(0);
   const Pizza = {
@@ -70,4 +70,4 @@ const singleProduct = () => {
   );
 };
 
-export default singleProduct;
+export default SingleProduct;

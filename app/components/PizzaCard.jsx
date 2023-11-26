@@ -15,7 +15,7 @@ const PizzaCard = ({ pizza }) => {
 
   return (
       <div className={styles.container}>
-       <Link href={`/singleProduct/${pizza.id}`}> 
+       <Link href={`/SingleProduct/${pizza.id}`}> 
        <Image
           src={pizza.image}
           width={200}
