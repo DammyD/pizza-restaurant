@@ -1,0 +1,156 @@
+.container {
+    padding: 50px 0 0 50px;
+    display: flex;
+}
+
+.imgContainer {
+width:80px;
+height: 80px;
+position: relative;
+vertical-align: top; 
+margin: 0 auto; 
+
+}
+
+.left {
+    flex: 2;
+}
+
+.right {
+flex: 1;
+}
+
+.table {
+width: 100%;
+border-spacing: 20px;
+border-collapse: collapse;
+}
+
+
+.th, .td {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+  }
+  
+.name {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.title {
+    color: var(--background-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.total {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.wrapper {
+    width: 85%;
+    max-height: 300px;
+    background-color: var(--primary-color);
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.totalText {
+    margin-bottom: 8px;
+}
+
+.totalText .totalTextTitle {
+    color: var(--background-color);
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.totalTexttitle{
+    color: var(--background-color);
+}
+
+.btnOne,
+.btnTwo,
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 600;
+  width: 210px; 
+  height: 40px;
+}
+
+.btn {
+    border-radius: 25px;
+    color: var(--background-color);
+    background-color: var(--tertiary-color);
+}
+
+.btnOne {
+    border-radius: 5px;
+    color: #669094;
+    background-color: var(--background-color);
+}
+
+.btnTwo {
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    color: var(--tertiary-color);
+    background-color: var(--background-color);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* White with some transparency */
+    z-index: 999;
+  }
+
+/* mobile responsiveness */
+
+@media (max-width: 420px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .th, .td {
+        padding: 9px;
+    }
+
+    .table {
+        border-spacing: 10px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .imgContainer {
+        width: 60px;
+        height: 60px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+}

@@ -1,0 +1,141 @@
+.footer {
+    background-color: var(--secondary-color);
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerItems {
+    list-style: none;
+}
+
+.footerCol {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footerCol h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.footerCol h4:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--tertiary-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footerCol
+.footerItems
+.footerLinks:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footerItems
+.footerLinks a {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footerItems:hover
+.footerLinks a:hover {
+    padding-left: 8px;
+    color: var(--tertiary-color);
+}
+
+.footerCol
+.socialLinks a {
+    display: inline-block;
+    height: 30px;
+    width: 32px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    color: var(--background-color);
+    transition: all 0.3s ease;    
+}
+
+.footerCol
+.socialLinks a:nth-child(1) {
+    background-color: var(--facebook);
+}
+
+.footerCol
+.socialLinks a:nth-child(2) {
+    background-color: var(--pinterest);
+}
+
+.footerCol
+.socialLinks a:nth-child(3) {
+    background-color: var(--twitter);
+}
+
+.footerCol
+.socialLinks a:nth-child(4) {
+    background-color: var(--instagram);
+}
+
+.footerCol
+.socialLinks a:hover {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+}
+
+.footerText p {
+    font-size: 14px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.footerButton button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    color: var(--background-color);
+    background-color: var(--tertiary-color);
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.footerButton button:hover {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+
+/* Responsiveness */
+
+@media(max-width: 767px) {
+    .footerCol {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width: 420px) {
+    .footerCol {
+        width: 100%;
+    }
+}
+
+

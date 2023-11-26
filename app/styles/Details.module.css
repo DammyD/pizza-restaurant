@@ -1,0 +1,247 @@
+.container {
+  
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    flex: 1;
+    padding: 3.5rem 2rem;
+}
+
+.imgContainer {
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+.title {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+
+.desc {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.price,
+.review,
+.desc,
+.category,
+.tag,
+.choose,
+.ingredients,
+.field {
+    margin-bottom: 20px;
+}
+
+.choose {
+    margin-top: 10px;
+}
+
+.price {
+    color: var(--attention);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.review {
+    margin-left: 25px;
+    font-size: 16px;
+    color: #cdced0;
+    font-weight: 600;
+}
+
+.sizes {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.size {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.size img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.size:nth-child(2){
+    width: 40px;
+    height: 40px;
+}
+
+.size:last-child {
+    width: 50px;
+    height: 50px;
+}
+
+.number {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    background-color: var(--attention);
+    color: var(--background-color);
+    font-size: 12px;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+.ingredients {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.quantity {
+    width: 100px;
+    height: 30px;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    color: var(--background-color);
+    background-color: var(--tertiary-color);
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+
+.field {
+    display: flex;
+    align-items: center;
+}
+
+.heart {
+    font-size: 30px;
+    border: 2px solid #cdced0;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Media query for screens 420px and below */
+
+/* Larger screens */
+@media (min-width: 421px) {
+    .container {
+        height: calc(100vh - 100px);
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        min-height: calc(100vh - 100px);
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .left,
+    .right {
+        width: 100%; 
+    }
+
+    .left {
+        top: 0;
+    }
+
+    .imgContainer {
+        width: 100%;
+        height: 200px;  
+    }
+
+    .imgContainer img {
+        object-fit: cover; 
+        width: 100%;
+        height: 100%;
+    }
+
+    .size img {
+        object-fit: contain;
+        width: 80%; 
+        height: auto; 
+    }
+
+    .title {
+        font-size: 24px; 
+    }
+
+    .desc {
+        font-size: 16px; 
+    }
+
+    .price,
+    .review,
+    .category,
+    .tag,
+    .choose,
+    .sizes,
+    .ingredients,
+    .field {
+        margin-bottom: 10px; 
+    }
+
+    .review {
+        margin-left: 10px; 
+    }
+
+    .sizes {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .number {
+        background-color: var(--attention);
+        color: var(--background-color);
+        font-size: 12px;
+        padding: 0 5px;
+        border-radius: 10px;
+        margin-left: 5px; 
+    }
+
+    .option {
+        margin-right: 10px;
+    }
+
+    .heart {
+        margin-left: 8px;
+    }
+}

@@ -1,0 +1,194 @@
+.container {
+  display: flex;
+  height: calc(100vh - 100px);
+  background-color: var(--background-color);
+  position: relative;
+}
+
+.leftWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+  padding: 5rem 4rem;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.miniText {
+  width: 70%;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-align: center;
+  gap: 5px;
+}
+
+.imgContainer {
+  position: relative;
+  left: 8rem;
+}
+
+.background {
+  width: 25rem;
+  height: auto;
+  background-color: var(--tertiary-color);
+  border-top-left-radius: 100% 50%;
+  border-bottom-left-radius: 100% 50%;
+}
+
+.pizzaImg {
+  display: flex;
+  position: absolute;
+}
+
+.onion {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  top: -3rem;
+  left: -4rem;
+  transform: rotate(45deg);
+}
+
+.onion > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.onion:hover,
+.headerPizza:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.headerPizza {
+  width: 7rem;
+  height: 5rem;
+  left: 14rem;
+  position: relative;
+  transform: rotate(-45deg);
+}
+
+/* second hero section */
+
+.sliceContainer {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.sliceText span {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sliceText span:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.miniContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sliceMiniText p {
+  width: 50%;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.garlic {
+  margin-left: -300px;
+}
+
+.garlic:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Media Query for 420px and below */
+@media screen and (max-width: 420px) {
+  .container {
+    height: 50vh;
+    flex-direction: column;
+  }
+
+  .leftWrapper {
+    padding: 2rem 1rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .onion {
+    display: none;
+  }
+
+  .imgContainer {
+  display: none;
+  }
+
+  .headerPizza {
+    display: none;
+  }
+
+  .headerText {
+    font-size: 1.5rem;
+  }
+
+  .miniText {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .imgContainer {
+    left: 0;
+  }
+
+  .background {
+    display: none;
+  }
+
+  .slicedPizza {
+    margin-top: 15px;
+  }
+
+  .sliceContainer {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .sliceText span {
+    font-size: 1.2rem;
+  }
+
+  .sliceMiniText p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .garlic {
+    margin-left: 0;
+  }
+}
