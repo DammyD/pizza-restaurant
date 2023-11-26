@@ -39,6 +39,7 @@
   align-items: center;
   padding: 8px 15px;
   text-align: center;
+  margin-top: 10px;
   gap: 5px;
 }
 
@@ -66,7 +67,7 @@
   }
 
   .desc {
-    text-align: center; 
+    text-align: start; 
   }
 
   .btn {

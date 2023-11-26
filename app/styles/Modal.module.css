@@ -63,7 +63,8 @@
   .container {
     width: 90%;
     max-width: 300px;
-    margin-left: -330px;
+    margin-left: -150px;
+    margin-top: 50px;
     padding: 20px;
   }
 
