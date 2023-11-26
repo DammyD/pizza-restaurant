@@ -4,7 +4,7 @@ import styles from '../styles/Modal.module.css'
 const Modal = ({closeModal}) => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>You'll pay $12 on delivery</h2>
+      <h2 className={styles.title}>You&apos;ll pay $12 on delivery</h2>
       <form action="" className={styles.form}>
         <label htmlFor="name" className={styles.label}>Name</label>
         <input type="text" id="name" name="name" className={styles.input}/>
