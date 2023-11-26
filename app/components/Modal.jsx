@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/Modal.module.css'
 
 
@@ -13,7 +14,8 @@ const Modal = ({closeModal}) => {
         <label htmlFor="address" className={styles.label}>Address</label>
         <textarea id="address" name="address" rows="4" className={styles.textarea}/>
         <div className={styles.btnWrapper}>
-        <button className={styles.btn} onClick={closeModal}>order</button>
+        <Link href="../order"><button className={styles.btn} onClick={closeModal}>order</button>
+        </Link>
         </div>
       </form>
     </div>

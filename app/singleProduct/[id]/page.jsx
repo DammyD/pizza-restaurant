@@ -4,12 +4,8 @@ import styles from "../../styles/Details.module.css"
 import Size from "../../../public/assets/size.png"
 import { useState } from "react";
 import { CiHeart } from "react-icons/ci";
-// import { useRouter } from "next/router";
 
-const Details = () => {
-
-  // const router = useRouter();
-  // const {id} = router.query;
+const singleProduct = () => {
 
   const [size, setSize] = useState(0);
   const Pizza = {
@@ -74,4 +70,4 @@ const Details = () => {
   );
 };
 
-export default Details;
+export default singleProduct;
